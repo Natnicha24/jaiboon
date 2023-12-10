@@ -949,7 +949,7 @@ app.get("/showDB", async (req, res) => {
     res.json(result);
 })
 
-const PORT = 3000; // ให้เป็นตัวเลขเท่านั้น
+const PORT = process.env.PORT|| 3000; // ให้เป็นตัวเลขเท่านั้น
 app.listen(PORT,  () => {
     console.log(`Server running at ${PORT}`);
 });
