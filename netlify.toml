@@ -1,0 +1,9 @@
+[build]
+  command = "node server.js"
+  functions = "server"
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+  force = true
